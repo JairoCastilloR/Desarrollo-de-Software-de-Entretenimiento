@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1536
     height: 820.8
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Game
+=======
+  m_Title: Hierarchy
+>>>>>>> AvanceJairo01
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +52,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 64
+=======
+  controlID: 96
+>>>>>>> AvanceJairo01
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +76,13 @@ MonoBehaviour:
     y: 0
     width: 363.19995
     height: 770.8
+<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> AvanceJairo01
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -224,7 +237,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 70
+=======
+  controlID: 102
+>>>>>>> AvanceJairo01
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +266,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 22
+=======
+  controlID: 103
+>>>>>>> AvanceJairo01
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +290,13 @@ MonoBehaviour:
     y: 0
     width: 882.4
     height: 526.4
+<<<<<<< HEAD
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> AvanceJairo01
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -307,7 +333,11 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: -13648
+=======
+  m_LastSelectedObjectID: 24474
+>>>>>>> AvanceJairo01
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -349,22 +379,37 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/Scripts
+>>>>>>> AvanceJairo01
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets
+=======
+  - Assets/Scripts
+>>>>>>> AvanceJairo01
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\migue\Pictures\Jairo\2022B\IDNP\FinalProyect\FinalProyect
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ba610000
     m_LastClickedID: 25018
     m_ExpandedIDs: 00000000b6610000b8610000ba61000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 120.60004}
+    m_SelectedIDs: 9a5e0000
+    m_LastClickedID: 24218
+    m_ExpandedIDs: 00000000805e0000825e0000845e000000ca9a3b
+>>>>>>> AvanceJairo01
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,7 +437,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000b6610000b8610000ba610000
+=======
+    m_ExpandedIDs: 00000000805e0000825e0000845e0000
+>>>>>>> AvanceJairo01
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -419,7 +468,11 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> AvanceJairo01
     m_ExpandedInstanceIDs: c6230000fa610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -483,7 +536,11 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
+<<<<<<< HEAD
   m_LastVerticalScrollValue: 0
+=======
+  m_LastVerticalScrollValue: 63.200012
+>>>>>>> AvanceJairo01
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -519,24 +576,31 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 94f4ffff
+=======
+      scrollPos: {x: 0, y: 107.599976}
+      m_SelectedIDs: 925f0000
+      m_LastClickedID: 24466
+      m_ExpandedIDs: f2f7fffff0faffff925f00009a5f0000
+>>>>>>> AvanceJairo01
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Interfaz Pause Canvas
+        m_OriginalName: Interfaz Pause Canvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 24474
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -771,9 +835,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.22966814, y: 16.80648, z: -46.551857}
     speed: 2
     m_Value: {x: -0.22966814, y: 16.80648, z: -46.551857}
+=======
+    m_Target: {x: 440.2, y: 242.20001, z: 0}
+    speed: 2
+    m_Value: {x: 440.2, y: 242.20001, z: 0}
+>>>>>>> AvanceJairo01
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -820,6 +890,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.529
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.042886358, y: -0.0110890465, z: -0.0004823003, w: 0.9990533}
     speed: 2
     m_Value: {x: -0.04288486, y: -0.011088659, z: -0.00048228345, w: 0.99901843}
@@ -827,6 +898,15 @@ MonoBehaviour:
     m_Target: 7.5967917
     speed: 2
     m_Value: 7.5967917
+=======
+    m_Target: {x: 0.18490656, y: -0.01621449, z: 0.0030502996, w: 0.9826318}
+    speed: 2
+    m_Value: {x: 0.18490398, y: -0.016214265, z: 0.003050257, w: 0.9826181}
+  m_Size:
+    m_Target: 502.431
+    speed: 2
+    m_Value: 502.43094
+>>>>>>> AvanceJairo01
   m_Ortho:
     m_Target: 1
     speed: 2
