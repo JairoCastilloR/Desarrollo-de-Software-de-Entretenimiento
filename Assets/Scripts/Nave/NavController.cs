@@ -37,7 +37,16 @@ public class NavController : MonoBehaviour
         {
             transform.position += Vector3.forward * Time.deltaTime * curSpeed;
             curSpeed += acceleration * Time.deltaTime;
-             if (curSpeed > maxSpeed){curSpeed = maxSpeed;}
+            if (curSpeed > maxSpeed){ curSpeed = maxSpeed; }
+
+        }else{
+
+            curSpeed -= acceleration * Time.deltaTime;
+            if (curSpeed < 0){ 
+                curSpeed = 0; 
+            }
+            transform.position += Vector3.forward * Time.deltaTime * curSpeed;
+        
         }
         if (Input.GetKey(KeyCode.D))
         {
