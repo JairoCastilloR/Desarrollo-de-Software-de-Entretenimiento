@@ -6,6 +6,8 @@ public class NavController : MonoBehaviour
 {
     Rigidbody rigidbody;
     Transform transform;
+    [SerializeField]
+    GameObject dustCloud;
 
     public float speed = 30f;
     public float jumpSpeed = 20f;
@@ -14,6 +16,7 @@ public class NavController : MonoBehaviour
     private float curSpeed=0.0f;
     private float maxSpeed = 30f;
     public float acceleration=1.0f;
+    public float gravity = -9.8f;
     
     void Start()
     {
@@ -28,6 +31,7 @@ public class NavController : MonoBehaviour
        
         if (Input.GetKey(KeyCode.Space) && IsGrounded)
         {
+            jumpSpeed += gravity * Time.deltaTime;
             Vector3 jumpVelocity = new Vector3(0f,jumpSpeed,0f);
             rigidbody.velocity += jumpVelocity;
             IsGrounded = false;
@@ -62,6 +66,8 @@ public class NavController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("platform")) {
+            //animation
+            Instantiate (dustCloud, transform.position,dustCloud.transform.rotation);
             IsGrounded = true;
         }
     }

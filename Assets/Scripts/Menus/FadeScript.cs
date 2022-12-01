@@ -12,9 +12,10 @@ public class FadeScript : MonoBehaviour
         anim = GetComponent <Animator>();
     }
     public void PasarNivel() {
-         SceneManager.LoadScene(nivel);
+        SceneManager.LoadScene(nivel);
     }
     public void HacerFade(){
         anim.SetTrigger("FadeOutScene");
     }
+
 }
