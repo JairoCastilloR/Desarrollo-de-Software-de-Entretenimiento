@@ -76,6 +76,9 @@ public class NavController1 : MonoBehaviour
             audioSource.Stop();
             IsGrounded = true;
         }
+        if (collision.gameObject.CompareTag("pared")) {
+            Instantiate (dustCloud, transform.position,dustCloud.transform.rotation);
+        }
     }
 
    

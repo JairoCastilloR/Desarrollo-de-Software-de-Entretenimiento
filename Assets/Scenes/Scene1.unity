@@ -3037,21 +3037,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 104
   m_CollisionDetection: 1
---- !u!114 &1602641499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602641494}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bdaa0f4106762d48910bef3b5a19516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  jumpForce: 8
-  IsGrounded: 1
 --- !u!82 &1602641502
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3174,7 +3159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dustCloud: {fileID: 7431781132008464467, guid: 46208cb9cda96df46a653040441b8f0d, type: 3}
-  speed: 50
+  speed: 30
   jumpSpeed: 8
   distToGround: 0.5
   acceleration: 10
@@ -4502,6 +4487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3716592964447375722, guid: ed315e6589ea6f8469d69fc1d84203a2, type: 3}
+      propertyPath: m_TagString
+      value: pared
+      objectReference: {fileID: 0}
     - target: {fileID: 3716592964447375723, guid: ed315e6589ea6f8469d69fc1d84203a2, type: 3}
       propertyPath: m_Size.x
       value: 1.0872715
