@@ -12,7 +12,7 @@ public class BarraVida : MonoBehaviour
     public Image Vidabarra;
     public float vida;
     [SerializeField]
-    private TMP_Text scoreText;
+    private TMP_Text scoreText ;
     [SerializeField]
     private FloatSO scoreSo;
     //ScoreSystem scoreSystem;
@@ -22,6 +22,7 @@ public class BarraVida : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreText.text = "";
         scoreText.text = scoreSo.Value + "";
         
     }
@@ -31,8 +32,8 @@ public class BarraVida : MonoBehaviour
     {
         Vidabarra.fillAmount=vida/vidamaxima;
         if(vida<=0){
-            
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Debug.Log("vida disminuye todo");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         if(vida < 100){
             scoreSo.Value += 100;

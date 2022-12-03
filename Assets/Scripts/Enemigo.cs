@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    public float danio = 20;
+    AudioSource m_MyAudioSource;
+    public float danio = 1;
     public GameObject target;
     public GameObject enemy;
     public float colision = 1;
@@ -13,7 +14,7 @@ public class Enemigo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        m_MyAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -29,11 +30,31 @@ public class Enemigo : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void OnCollisionEnter(Collision  collision) {
         
 
-        if(other.tag=="Player"){
+        if(collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
+            m_MyAudioSource.Play();
+            target.GetComponent<BarraVida>().vida-=colision;
+            //} 
+        }
+    }
+    private void OnCollisionStay(Collision  collision) {
+        
+
+        if(collision.gameObject.tag=="Player"){
+            //for(i = colision; i <= 30; i++ ){
+            target.GetComponent<BarraVida>().vida-=colision;
+            //} 
+        }
+    }
+    private void OnCollisionExit(Collision  collision) {
+        
+
+        if(collision.gameObject.tag=="Player"){
+            //for(i = colision; i <= 30; i++ ){
+            m_MyAudioSource.Stop();
             target.GetComponent<BarraVida>().vida-=colision;
             //} 
         }

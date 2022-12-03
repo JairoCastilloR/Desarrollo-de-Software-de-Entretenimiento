@@ -7,7 +7,8 @@ public class NavController1 : MonoBehaviour
     Rigidbody rigidbody;
     Transform transform;
     [SerializeField]
-    GameObject dustCloud;
+    public GameObject dustCloud;
+    public GameObject dustCloudBlack;
 
     public float speed = 30f;
     public float jumpSpeed = 20f;
@@ -17,6 +18,7 @@ public class NavController1 : MonoBehaviour
     private float maxSpeed = 30f;
     public float acceleration=1.0f;
     public float gravity = -9.8f;
+    private GameObject cloneDust;
 
     AudioSource audioSource;
 
@@ -26,6 +28,7 @@ public class NavController1 : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         transform = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
+    
     }
 
     void Update()
@@ -76,8 +79,15 @@ public class NavController1 : MonoBehaviour
             audioSource.Stop();
             IsGrounded = true;
         }
-        if (collision.gameObject.CompareTag("pared")) {
-            Instantiate (dustCloud, transform.position,dustCloud.transform.rotation);
+        if (collision.gameObject.CompareTag("tunelColision")) {
+            
+            cloneDust = Instantiate (dustCloudBlack, transform.position,dustCloudBlack.transform.rotation);
+        }
+    }
+   
+    private void OnCollisionExit(Collision collision){
+        if (collision.gameObject.CompareTag("tunelColision")) {
+            Destroy (cloneDust, 1f);
         }
     }
 
