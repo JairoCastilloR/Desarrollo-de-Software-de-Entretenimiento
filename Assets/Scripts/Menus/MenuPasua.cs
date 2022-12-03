@@ -8,7 +8,10 @@ public class MenuPasua : MonoBehaviour
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject opciones;
-    
+    /*private FadeScript fade;
+    private void Awake(){
+        fade = FindObjectOfType<FadeScript>();
+    }*/
 
 
     private bool juegopausado=false;
@@ -49,7 +52,7 @@ public class MenuPasua : MonoBehaviour
     public void Reiniciar(){
         juegopausado=false;
         Time.timeScale=1f;
-    
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
@@ -64,8 +67,8 @@ public class MenuPasua : MonoBehaviour
 
     public void MainMenu(){
 
+        //fade.HacerFade();
         SceneManager.LoadScene("IntroMenu");
-
     }
 
 
