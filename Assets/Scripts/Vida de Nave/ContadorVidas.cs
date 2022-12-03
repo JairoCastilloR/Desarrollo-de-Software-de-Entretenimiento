@@ -8,6 +8,7 @@ public class ContadorVidas : MonoBehaviour
 
 
     public static ContadorVidas numVidas;
+    public GameObject[] vidas;
     public GameObject vida1;
     public GameObject vida2;
     public GameObject vida3;
@@ -39,19 +40,19 @@ public class ContadorVidas : MonoBehaviour
     /*void LeerVidas(){
 
 
-        foreach (Transform vidasImage in Layer){
+        foreach (GameObject vidasImage in vidas){
             int i = 0;
             
-            if(vidasImage.gameObject.layer == LayerMask.NameToLayer("vida")){
-                if(target.GetComponent<BarraVida>().vida == 0){
-                    vidasImage[i].SetActive(false);
+            if(vidasImage.gameObject.layer == LayerMask.NameToLayer("vidas")){
+                if(target.GetComponent<BarraVida>().vida <= 65){
+                    vidasImage.GameObject.SetActive(false);
                     }
                 i++;
                 }
             
             
-        }*/
+        }
 
-    }
-
+    }*/
+}
 

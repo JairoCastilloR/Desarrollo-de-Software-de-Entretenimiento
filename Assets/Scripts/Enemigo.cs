@@ -7,6 +7,7 @@ public class Enemigo : MonoBehaviour
     public float danio = 20;
     public GameObject target;
     public GameObject enemy;
+    public float colision = 1;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,16 @@ public class Enemigo : MonoBehaviour
          }
         
     }
+
+    private void OnTriggerStay(Collider other) {
+        
+
+        if(other.tag=="Player"){
+            //for(i = colision; i <= 30; i++ ){
+            target.GetComponent<BarraVida>().vida-=colision;
+            //} 
+        }
+    } 
 
 
 
