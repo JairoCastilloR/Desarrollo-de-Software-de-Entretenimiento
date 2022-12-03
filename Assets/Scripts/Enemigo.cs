@@ -6,6 +6,7 @@ public class Enemigo : MonoBehaviour
 {
     public float danio = 20;
     public GameObject target;
+    public GameObject enemy;
     
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,8 @@ public class Enemigo : MonoBehaviour
         if(Vector3.Distance(transform.position,target.transform.position)<2){
 
             target.GetComponent<BarraVida>().vida-=danio;
+            Debug.Log("mi pene");
+            Destroy(enemy);
 
          }
         
