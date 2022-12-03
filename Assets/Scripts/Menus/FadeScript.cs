@@ -13,9 +13,13 @@ public class FadeScript : MonoBehaviour
     }
     public void PasarNivel() {
         SceneManager.LoadScene(nivel);
+        Debug.Log(nivel);
     }
     public void HacerFade(){
         anim.SetTrigger("FadeOutScene");
+    }
+    public void setNivel(string nivel){
+        this.nivel = nivel;
     }
 
 }

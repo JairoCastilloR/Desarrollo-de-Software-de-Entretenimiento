@@ -6,11 +6,14 @@ public class Enemigo : MonoBehaviour
 {
     public float danio = 20;
     public GameObject target;
+    public GameObject enemy;
+    public float colision = 1;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,10 +23,23 @@ public class Enemigo : MonoBehaviour
         if(Vector3.Distance(transform.position,target.transform.position)<2){
 
             target.GetComponent<BarraVida>().vida-=danio;
+            Destroy(enemy);
 
          }
         
     }
+
+    private void OnTriggerStay(Collider other) {
+        
+
+        if(other.tag=="Player"){
+            //for(i = colision; i <= 30; i++ ){
+            target.GetComponent<BarraVida>().vida-=colision;
+            //} 
+        }
+    }
+
+
 
 
 

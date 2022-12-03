@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NextLvl : MonoBehaviour
 {
-
+    public GameObject crystal;
     private FadeScript fade;
     private void Awake(){
         fade = FindObjectOfType<FadeScript>();
@@ -17,6 +17,7 @@ public class NextLvl : MonoBehaviour
             Debug.Log("Ingresando nuevo nivel");
             fade.HacerFade();
             fade.PasarNivel();
+            Destroy(crystal);
         }
     }
 }
