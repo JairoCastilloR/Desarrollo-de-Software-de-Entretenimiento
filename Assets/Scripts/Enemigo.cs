@@ -24,9 +24,10 @@ public class Enemigo : MonoBehaviour
         if(Vector3.Distance(transform.position,target.transform.position)<2){
 
             target.GetComponent<BarraVida>().vida-=danio;
-            Destroy(enemy);
-
-         }
+            if(enemy.tag=="enemy"){
+                Destroy(enemy);
+            }
+        }
         
     }
 
@@ -45,6 +46,7 @@ public class Enemigo : MonoBehaviour
 
         if(collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
+            //m_MyAudioSource.Play();
             target.GetComponent<BarraVida>().vida-=colision;
             //} 
         }
@@ -54,7 +56,6 @@ public class Enemigo : MonoBehaviour
 
         if(collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
-            m_MyAudioSource.Stop();
             target.GetComponent<BarraVida>().vida-=colision;
             //} 
         }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class BarraVida : MonoBehaviour
 {
@@ -11,35 +10,35 @@ public class BarraVida : MonoBehaviour
     public static BarraVida DatosBarra;
     public Image Vidabarra;
     public float vida;
-    [SerializeField]
-    private TMP_Text scoreText ;
-    [SerializeField]
-    private FloatSO scoreSo;
+    //[SerializeField]
+    //private TMP_Text scoreText ;
+    //[SerializeField]
+    //private FloatSO scoreSo;
     //ScoreSystem scoreSystem;
 
     public float vidamaxima;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        scoreText.text = "";
-        scoreText.text = scoreSo.Value + "";
+    //void Start()
+    //{
+        //scoreText.text = "";
+        //scoreText.text = scoreSo.Value + "";
         
-    }
+    //}
 
     // Update is called once per frame
     void Update()
     {
         Vidabarra.fillAmount=vida/vidamaxima;
-        if(vida<=0){
-            Debug.Log("vida disminuye todo");
+        //if(vida<=0){
+        //    Debug.Log("vida disminuye todo");
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-        if(vida < 100){
-            scoreSo.Value += 0.1f;
-            scoreText.text = scoreSo.Value + "";
+        //}
+        //if(vida < 100){
+        //    scoreSo.Value += 0.1f;
+        //    scoreText.text = scoreSo.Value + "";
             //scoreSystem.SetScore(score);
-        }
+        //}
     }
         
 
