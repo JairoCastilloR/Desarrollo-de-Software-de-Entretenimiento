@@ -36,18 +36,11 @@ public class BarraVida : MonoBehaviour
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         if(vida < 100){
-            scoreSo.Value += 100;
+            scoreSo.Value += 0.1;
             scoreText.text = scoreSo.Value + "";
             //scoreSystem.SetScore(score);
         }
     }
-
-        private void OnTriggerEnter(Collider other){
-
-        if(other.tag == "caida"){
-            Debug.Log("aaaaah mi pichulaa");
-            ContadorVidas.numVidas.Descontar(1);
-        }
-    } 
+        
 
 }

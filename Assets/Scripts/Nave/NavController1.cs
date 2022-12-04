@@ -9,6 +9,7 @@ public class NavController1 : MonoBehaviour
     [SerializeField]
     public GameObject dustCloud;
     public GameObject dustCloudBlack;
+    
 
     public float speed = 30f;
     public float jumpSpeed = 20f;
@@ -90,8 +91,5 @@ public class NavController1 : MonoBehaviour
             Destroy (cloneDust, 1f);
         }
     }
-
-   
-
    
 }
