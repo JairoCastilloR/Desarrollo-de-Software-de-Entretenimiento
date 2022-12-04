@@ -8,6 +8,7 @@ TagManager:
   - pared
   - tunelColision
   - caida
+  - Enemy
   layers:
   - Default
   - TransparentFX

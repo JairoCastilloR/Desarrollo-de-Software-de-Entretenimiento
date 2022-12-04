@@ -36,7 +36,7 @@ public class BarraVida : MonoBehaviour
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         if(vida < 100){
-            scoreSo.Value += 0.1;
+            scoreSo.Value += 0.1f;
             scoreText.text = scoreSo.Value + "";
             //scoreSystem.SetScore(score);
         }
