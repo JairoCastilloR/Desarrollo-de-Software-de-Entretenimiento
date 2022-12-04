@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    AudioSource m_MyAudioSource;
+    public AudioSource m_MyAudioSource;
     public float danio = 1;
     public GameObject target;
     public GameObject enemy;
@@ -18,7 +18,7 @@ public class Enemigo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
 
         if(Vector3.Distance(transform.position,target.transform.position)<2){
@@ -30,7 +30,7 @@ public class Enemigo : MonoBehaviour
         }
         
     }
-
+*/
     private void OnCollisionEnter(Collision  collision) {
         
 
@@ -44,14 +44,14 @@ public class Enemigo : MonoBehaviour
     private void OnCollisionStay(Collision  collision) {
         
 
-        if(collision.gameObject.tag=="Player"){
+        if(enemy.tag=="tunelColision" && collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
             //m_MyAudioSource.Play();
             target.GetComponent<BarraVida>().vida-=colision;
             //} 
         }
     }
-    private void OnCollisionExit(Collision  collision) {
+    /*private void OnCollisionExit(Collision  collision) {
         
 
         if(collision.gameObject.tag=="Player"){
@@ -59,7 +59,7 @@ public class Enemigo : MonoBehaviour
             target.GetComponent<BarraVida>().vida-=colision;
             //} 
         }
-    }
+    }*/
 
 
 

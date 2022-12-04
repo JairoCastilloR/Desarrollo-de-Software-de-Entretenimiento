@@ -53,6 +53,7 @@ public class vidasContador : MonoBehaviour
         {
             numVidas--;
             Destroy(vidas[numVidas].gameObject);
+            
             SceneManager.LoadScene("Scene1");
         }
         if (numVidas == 0)
