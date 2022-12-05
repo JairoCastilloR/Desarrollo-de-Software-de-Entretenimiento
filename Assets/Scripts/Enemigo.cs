@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     public AudioSource m_MyAudioSource;
-    public float danio = 1;
+    public float danio = 100;
     public GameObject target;
     public GameObject enemy;
     public float colision = 1;
@@ -37,7 +37,7 @@ public class Enemigo : MonoBehaviour
         if(collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
             m_MyAudioSource.Play();
-            target.GetComponent<BarraVida>().vida-=colision;
+            target.GetComponent<BarraVida>().vida-=danio;
             //} 
         }
     }
@@ -47,7 +47,7 @@ public class Enemigo : MonoBehaviour
         if(enemy.tag=="tunelColision" && collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
             //m_MyAudioSource.Play();
-            target.GetComponent<BarraVida>().vida-=colision;
+            target.GetComponent<BarraVida>().vida-=danio;
             //} 
         }
     }

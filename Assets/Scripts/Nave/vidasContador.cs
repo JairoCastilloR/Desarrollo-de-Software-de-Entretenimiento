@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
+using System;
 using UnityEngine.SceneManagement;
 
 public class vidasContador : MonoBehaviour
@@ -9,6 +11,7 @@ public class vidasContador : MonoBehaviour
     public GameObject prefab;
     public GameObject padreObject;
     public GameObject target;
+    public ParticleSystem particles;
     public int numVidas;
     private bool dead;
     //sobrecarga paremetrica csm..... ~~~
@@ -16,8 +19,9 @@ public class vidasContador : MonoBehaviour
     
     void Start()
     {
+        
         loadVidas();
-        if (numVidas == -1)
+        if (numVidas <= 0)
         {
             numVidas = 4;
             saveVidas();
@@ -52,9 +56,12 @@ public class vidasContador : MonoBehaviour
         if (numVidas >= 0)
         {
             numVidas--;
+            var cloneParticulas = Instantiate(particles, transform.position,particles.transform.rotation);
             Destroy(vidas[numVidas].gameObject);
-            
-            SceneManager.LoadScene("Scene1");
+            Destroy(cloneParticulas, cloneParticulas.main.duration);
+            target.SetActive(false);
+            myasync();
+            //SceneManager.LoadScene("Scene1");
         }
         if (numVidas == 0)
         {
@@ -62,6 +69,14 @@ public class vidasContador : MonoBehaviour
         }
     }
 
+    private async void myasync(){
+        //numVidas--;
+        //Destroy(vidas[numVidas].gameObject);
+        await Task.Delay(TimeSpan.FromSeconds(5));
+        SceneManager.LoadSceneAsync("Scene1");
+        
+    }
+   
     private void OnTriggerEnter(Collider other)
     {
 

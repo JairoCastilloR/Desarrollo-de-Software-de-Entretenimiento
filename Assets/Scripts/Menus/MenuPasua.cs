@@ -32,9 +32,9 @@ public class MenuPasua : MonoBehaviour
         juegopausado=true;
         Time.timeScale=0f;
         AudioSource[] audios=FindObjectsOfType<AudioSource>();
-        foreach(AudioSource a in audios){
+        /*foreach(AudioSource a in audios){
             a.Pause();
-        }
+        }*/
         botonPausa.SetActive(false);
         menuPausa.SetActive(true);
         opciones.SetActive(false);
@@ -43,9 +43,9 @@ public class MenuPasua : MonoBehaviour
         juegopausado=false;
         Time.timeScale=1f;
         AudioSource[] audios=FindObjectsOfType<AudioSource>();
-        foreach(AudioSource a in audios){
+        /*foreach(AudioSource a in audios){
             a.Play();
-        }
+        }*/
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
         opciones.SetActive(false);
