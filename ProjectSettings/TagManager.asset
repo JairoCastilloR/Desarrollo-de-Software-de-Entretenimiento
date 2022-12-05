@@ -9,6 +9,7 @@ TagManager:
   - tunelColision
   - caida
   - Enemy
+  - dangerZone
   layers:
   - Default
   - TransparentFX

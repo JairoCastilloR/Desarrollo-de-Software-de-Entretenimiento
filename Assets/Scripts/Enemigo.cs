@@ -50,6 +50,12 @@ public class Enemigo : MonoBehaviour
             target.GetComponent<BarraVida>().vida-=danio;
             //} 
         }
+        if(enemy.tag=="dangerZone" && collision.gameObject.tag=="Player"){
+            //for(i = colision; i <= 30; i++ ){
+            //m_MyAudioSource.Play();
+            target.GetComponent<BarraVida>().vida-=danio;
+            //} 
+        }
     }
     /*private void OnCollisionExit(Collision  collision) {
         

@@ -72,7 +72,7 @@ public class vidasContador : MonoBehaviour
     private async void myasync(){
         //numVidas--;
         //Destroy(vidas[numVidas].gameObject);
-        await Task.Delay(TimeSpan.FromSeconds(5));
+        await Task.Delay(TimeSpan.FromSeconds(4));
         SceneManager.LoadSceneAsync("Scene1");
         
     }
