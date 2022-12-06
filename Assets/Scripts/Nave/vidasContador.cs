@@ -23,7 +23,7 @@ public class vidasContador : MonoBehaviour
         loadVidas();
         if (numVidas <= 0)
         {
-            numVidas = 4;
+            numVidas = 5;
             saveVidas();
         }
         Debug.Log("asdsa" + numVidas);

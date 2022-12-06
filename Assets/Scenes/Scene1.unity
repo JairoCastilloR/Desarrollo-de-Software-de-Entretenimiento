@@ -366,8 +366,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111983337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -27.1, z: 447}
-  m_LocalScale: {x: 300, y: 1, z: 950}
+  m_LocalPosition: {x: 0, y: -27.1, z: 579}
+  m_LocalScale: {x: 300, y: 1, z: 1354.795}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 278752620}
@@ -2408,10 +2408,10 @@ RectTransform:
   m_Father: {fileID: 2997020818584407954}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -453.70233, y: -211}
-  m_SizeDelta: {x: 149.9853, y: 55.5019}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 110, y: 44}
+  m_SizeDelta: {x: 149.98529, y: 55.501892}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010888963
 MonoBehaviour:
@@ -3740,7 +3740,7 @@ MonoBehaviour:
   padreObject: {fileID: 2997020818584407955}
   target: {fileID: 1602641494}
   particles: {fileID: 7868240607522870166, guid: 115dbaa8d4ba830478a647460f811610, type: 3}
-  numVidas: 4
+  numVidas: 5
 --- !u!114 &1602641508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4147,7 +4147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3191036628478820498, guid: c01eccb76ec178c4a9622f69eccdfb70, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3191036628478820510, guid: c01eccb76ec178c4a9622f69eccdfb70, type: 3}
       propertyPath: m_Pivot.x
