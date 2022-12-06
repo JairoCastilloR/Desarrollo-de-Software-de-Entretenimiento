@@ -10756,6 +10756,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46749172dd1bbd14a85834176a2cb596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  options: {fileID: 8940734368370482227}
+  panel: {fileID: 1676721760}
 --- !u!1 &1706436378
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,6 +10976,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1676721762}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1281887277}
         m_TargetAssemblyTypeName: FadeScript, Assembly-CSharp
         m_MethodName: HacerFade
@@ -11036,24 +11050,56 @@ PrefabInstance:
       value: OptionsButton
       objectReference: {fileID: 0}
     - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1676721760}
+      objectReference: {fileID: 1676721762}
     - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1281887277}
     - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: option
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: HacerFade
       objectReference: {fileID: 0}
     - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: FadeScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541594339188697286, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1541594339188697287, guid: ead7789a37c168d40a6eb1a526d47eca, type: 3}
       propertyPath: m_Pivot.x
@@ -11240,6 +11286,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3191036628751184191, guid: c01eccb76ec178c4a9622f69eccdfb70, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c01eccb76ec178c4a9622f69eccdfb70, type: 3}
 --- !u!1001 &8940734368370482226
@@ -11355,3 +11405,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bba498e8acb138c4cb21d544242400f7, type: 3}
+--- !u!1 &8940734368370482227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8940734369104055142, guid: bba498e8acb138c4cb21d544242400f7, type: 3}
+  m_PrefabInstance: {fileID: 8940734368370482226}
+  m_PrefabAsset: {fileID: 0}
