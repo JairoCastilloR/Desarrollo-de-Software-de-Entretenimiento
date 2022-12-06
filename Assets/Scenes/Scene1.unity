@@ -3479,6 +3479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WarningZone
       objectReference: {fileID: 0}
+    - target: {fileID: 2035590487058549462, guid: 50f1b5e41e706d04da60db4e2e3e702f, type: 3}
+      propertyPath: m_TagString
+      value: dangerZone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50f1b5e41e706d04da60db4e2e3e702f, type: 3}
 --- !u!4 &1577615376 stripped
