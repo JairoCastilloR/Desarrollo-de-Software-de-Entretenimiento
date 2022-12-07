@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public GameObject options;
-    public GameObject panel;
+    public GameObject mainMenu;
 
     public void PlayGame()
     {
@@ -21,9 +21,8 @@ public class MainMenu : MonoBehaviour
     }
     public void option(){
 
-        Debug.Log("pito");
         options.SetActive(true);
-        panel.SetActive(false);
+        mainMenu.SetActive(false);
 
     }
 
