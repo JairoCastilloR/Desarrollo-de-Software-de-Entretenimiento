@@ -10,6 +10,7 @@ public class BarraVida : MonoBehaviour
     public static BarraVida DatosBarra;
     public Image Vidabarra;
     public float vida;
+    private double penedoblado = 0.1;
     //[SerializeField]
     //private TMP_Text scoreText ;
     //[SerializeField]
@@ -30,6 +31,8 @@ public class BarraVida : MonoBehaviour
     void Update()
     {
         Vidabarra.fillAmount=vida/vidamaxima;
+
+        
         //if(vida<=0){
         //    Debug.Log("vida disminuye todo");
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -39,6 +42,15 @@ public class BarraVida : MonoBehaviour
         //    scoreText.text = scoreSo.Value + "";
             //scoreSystem.SetScore(score);
         //}
+    }
+    private void OnTriggerStay(Collider other) {
+
+        if(other.tag=="spriteDanger"){
+
+            vida = (float) (vida - penedoblado);
+            Debug.Log(other);
+            //Debug.Log(collision.gameObject.tag);
+        }
     }
         
 

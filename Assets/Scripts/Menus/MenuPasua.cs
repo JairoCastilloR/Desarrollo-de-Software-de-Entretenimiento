@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,7 +37,7 @@ public class MenuPasua : MonoBehaviour
         }*/
         botonPausa.SetActive(false);
         menuPausa.SetActive(true);
-        opciones.SetActive(false);
+        opciones.SetActive(true);
     }
     public void Reanudar(){
         juegopausado=false;

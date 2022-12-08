@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class NavController1 : MonoBehaviour
@@ -76,9 +77,10 @@ public class NavController1 : MonoBehaviour
         if (collision.gameObject.CompareTag("platform")) {
             //animation
             Instantiate (dustCloud, transform.position,dustCloud.transform.rotation);
-            gameObject.transform.Rotate(0.0f, 0.0f, 0.0f);
-            audioSource.Stop();
-            IsGrounded = true;
+            //gameObject.transform.Rotate(0.0f, 0.0f, 0.0f);
+            //audioSource.Stop();
+            //IsGrounded = true;
+            rotateNav();
         }
         if (collision.gameObject.CompareTag("tunelColision")) {
             
@@ -91,5 +93,11 @@ public class NavController1 : MonoBehaviour
             Destroy (cloneDust, 1f);
         }
     }
+    private async void rotateNav(){
+        gameObject.transform.Rotate(0.0f, 0.0f, 0.0f);
+        audioSource.Stop();
+        await Task.Delay(500);
+        IsGrounded = true;
+    } 
    
 }
