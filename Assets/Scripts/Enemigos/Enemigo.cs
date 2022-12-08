@@ -40,10 +40,12 @@ public class Enemigo : MonoBehaviour
             target.GetComponent<BarraVida>().vida-=danio;
             //} 
         }
+
     }
     private void OnCollisionStay(Collision  collision) {
         
 
+        
         if(enemy.tag=="tunelColision" && collision.gameObject.tag=="Player"){
             //for(i = colision; i <= 30; i++ ){
             //m_MyAudioSource.Play();
@@ -54,9 +56,21 @@ public class Enemigo : MonoBehaviour
             //for(i = colision; i <= 30; i++ ){
             //m_MyAudioSource.Play();
             target.GetComponent<BarraVida>().vida-=danio;
+            Debug.Log(collision.gameObject.tag);
             //} 
         }
     }
+
+    private void OnTriggerStay(Collider other) {
+
+        if(other.tag=="spriteDanger"){
+
+            target.GetComponent<BarraVida>().vida-=danio;
+            Debug.Log(other);
+            //Debug.Log(collision.gameObject.tag);
+        }
+    }
+}
     /*private void OnCollisionExit(Collision  collision) {
         
 
@@ -72,4 +86,4 @@ public class Enemigo : MonoBehaviour
 
 
 
-}
+
