@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - platform
+  - pared
+  - tunelColision
+  - caida
+  - Enemy
+  - dangerZone
   layers:
   - Default
   - TransparentFX
