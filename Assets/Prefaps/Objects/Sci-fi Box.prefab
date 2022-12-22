@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MyAudioSource: {fileID: 8009542910417835250}
-  danio: 5
+  danio: 10
   target: {fileID: 0}
   enemy: {fileID: 919132149155446097, guid: 92b71f633e6795d4ea50371ce5c0cc08, type: 3}
   colision: 1
