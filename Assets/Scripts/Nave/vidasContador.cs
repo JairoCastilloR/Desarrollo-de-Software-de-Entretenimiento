@@ -26,7 +26,7 @@ public class vidasContador : MonoBehaviour
             numVidas = 5;
             saveVidas();
         }
-        Debug.Log("asdsa" + numVidas);
+        //Debug.Log("vida" + numVidas);
         vidas = new GameObject[numVidas];
         for (var i = 0; i < numVidas; i++)
         {
@@ -40,7 +40,7 @@ public class vidasContador : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("asdsa" + numVidas);
+        //Debug.Log("vida" + numVidas);
         if (target.GetComponent<BarraVida>().vida <= 0)
         {
             Descontar();

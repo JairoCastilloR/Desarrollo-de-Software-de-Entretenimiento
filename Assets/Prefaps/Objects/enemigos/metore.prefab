@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speeD: 40
   timelife: 200
-  emigo: {fileID: 0}
+  emigo: {fileID: 919132149155446097, guid: bc98cf7f8a32ea8438b5e8524e3e0954, type: 3}
   follow: 5
   Sprite: {fileID: 4516999426587058498, guid: 8adf01bff1c455b4f8b3587b12a5dcd4, type: 3}
 --- !u!135 &6386770493436863535

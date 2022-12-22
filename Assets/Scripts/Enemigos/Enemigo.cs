@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     public AudioSource m_MyAudioSource;
-    public float danio = 100;
+    public float danio = 5;
     public GameObject target;
     public GameObject enemy;
     public float colision = 1;

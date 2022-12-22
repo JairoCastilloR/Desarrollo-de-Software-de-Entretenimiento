@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c48de6ab8bf0804da592b42b26d65d8, type: 3}
+  m_Name: New Character Data Base
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Kepler-22b
+    description: "kepler-22b es una s\xFAper Tierra que podr\xEDa estar cubierta
+      por un s\xFAper oc\xE9ano. El jurado a\xFAn est\xE1 deliberando sobre la verdadera
+      naturaleza de Kepler-22b; a 2,4 veces el radio de la Tierra."
+    characterSprite: {fileID: 21300000, guid: eaf11f33cbd8d2647ad94fe99a18ad59, type: 3}
+    UImage: {fileID: 0}
+  - characterName: Planeta B
+    description: 'Este tambien ... Lorem Ipsum es simplemente el texto de relleno
+      de las imprentas y archivos de texto. '
+    characterSprite: {fileID: 21300000, guid: 62f0e51b3cb467f449674c7cf14e5784, type: 3}
+    UImage: {fileID: 0}

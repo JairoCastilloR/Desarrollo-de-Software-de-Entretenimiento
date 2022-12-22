@@ -7,7 +7,7 @@ public class shotObj : MonoBehaviour
 {
     public float speeD=500f;
     public float timelife=3000f;
-    [SerializeReference]public GameObject emigo;
+    [SerializeReference] public GameObject emigo;
     public float follow;
     public GameObject Sprite;
 
