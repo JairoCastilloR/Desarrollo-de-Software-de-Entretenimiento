@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class shotObj : MonoBehaviour
 {
-    private float speeD=2f;
-    private float timelife=5f;
+    public float speeD=500f;
+    public float timelife=3000f;
     [SerializeReference]public GameObject emigo;
     public float follow;
     public GameObject Sprite;
@@ -36,13 +36,24 @@ public class shotObj : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if(other.tag=="piso"){
-            GameObject Colition = Instantiate(Sprite,transform.position, Quaternion.identity);
-
-            Colition.gameObject.GetComponent<BarraVida>().vida-=10;
+    private void OnTriggerStay(Collider other) {
+        if(other.tag=="platform"){
             
-            Debug.Log(Colition);
+            /*var x = new Vector3(60,-750,0);
+            
+            var lookPos= emigo.transform.position-transform.position;
+            Debug.Log(emigo.transform.position);
+            var lookPos1= emigo.transform.position+x;*/
+
+            //Quaternion rotation= Quaternion.LookRotation(lookPos);
+            //, Vector3(-90,-133,0)
+            var y = new Vector3(0,1.5f,0);
+
+            GameObject Colition = Instantiate(Sprite,transform.position -y , Quaternion.Euler(-90,-133,0));
+
+            //Colition.gameObject.GetComponent<BarraVida>().vida-=10;
+            
+            Debug.Log(Colition + "wea");
 
             Destroy(gameObject);
 
