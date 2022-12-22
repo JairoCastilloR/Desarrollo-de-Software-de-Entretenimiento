@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class InstantiateRandomly : MonoBehaviour
 {
-    public Transform pos;
+
     public GameObject gameObject;
-    private float rangoGeneracion = 9.0f;
+    int x,z,enemycount;
     // Start is called before the first frame update
     void Start()
     {
-        float poxXGeneracion =gameObject.transform.position.x - Random.Range(-rangoGeneracion,rangoGeneracion);
-        float poxZGeneracion =gameObject.transform.position.y -Random.Range(-rangoGeneracion,rangoGeneracion);
-        Instantiate(gameObject,new Vector3(poxXGeneracion,0,poxZGeneracion),gameObject.transform.rotation);
+        //StartCoroutine(spawnEnemy());
+       
     }
 
     // Update is called once per frame
@@ -20,5 +19,19 @@ public class InstantiateRandomly : MonoBehaviour
     {
         
     }
-   
+    private IEnumerator spawnEnemy(){
+        while(enemycount < 10){
+            x = Random.Range(-100,100);
+            z = Random.Range(100,100);
+            Instantiate(gameObject,new Vector3(transform.position.x + x,32,transform.position.z + z), Quaternion.identity);
+            yield return new WaitForSeconds(0.1f);
+            enemycount +=1;
+        }
+    
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        StartCoroutine(spawnEnemy());
+    }
+
 }
