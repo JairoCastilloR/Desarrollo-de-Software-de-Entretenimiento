@@ -1,4 +1,4 @@
-# Desarrollo-de-nuevas-plataformas
+# INTRODUCCION AL DESARROLLO DE SOFTWARE DE ENTRETENIMIENTO
 
 Creacion de VideoJuego en Unity
 
